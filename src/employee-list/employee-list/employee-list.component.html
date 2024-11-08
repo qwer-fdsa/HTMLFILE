@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-center">
+  <div>
+    <h2 class="text-center">Employee List</h2>
+    <table class="table table-bordered text-center"> <!-- Added 'text-center' for centering text -->
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.fname }}</td>
+          <td>{{ employee.lname }}</td>
+          <td>{{ employee.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
